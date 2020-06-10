@@ -7,7 +7,7 @@
 |---|---| ---|
 |Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
 |Day 2| Refine Worksheet Load Out (HTML, CSS) | Incomplete
-|Day 3| Continue Css, Responsive & Bug Fixes | Incomplete
+|Day 3| Continue Css & Bug Fixes | Incomplete
 |Day 4| Final Touches Record Video | Incomplete
 |Day 5| Present | Incomplete
 
