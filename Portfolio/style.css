@@ -6,21 +6,53 @@ background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
 }
-.nav-link {
- color: blue;
-    
+
+html {
+    scroll-behavior: smooth;
+}
+nav button span {
+    display: block;
+    height: 5px;
+    background-color: teal;
+    width: 30px;
+    margin: 5px 0;
+    transition: 250ms ease;
 }
 
-.collapse {
-   
+nav ul {
+    display: none;
+    background-color: yellowgreen;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80;
+    text-decoration: none;
 }
 
-.navbar-nav{
- 
-  
-
+nav {
+    position: fixed;
+    top: 0;
+    left:20px;
 }
 
+nav button {
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+}
+.open span {
+    background-color: white;
+}
+.open span:nth-child(2) {
+    display: none;
+
+}
+.open span:nth-child(3) {
+    transform: translateY(-2px) rotate(35deg);
+}
 h1 {
     
     font-weight: 300;
@@ -28,6 +60,7 @@ h1 {
    
     font-size: 30px;
     color: white;
+    margin-top: 50px;
     margin-left: 10px;
     
 }
@@ -163,6 +196,7 @@ h5 {
     text-align: right;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 25px;
+    margin-right: 20px;
 }
 .learn {
     color: rgb(104,8,81);
@@ -176,6 +210,9 @@ h6 {
         margin-top: 100px;
         color: rgb(1,129,151);
 
+}
+h7 {
+    text-align: center;
 }
 
 .contact-wrapper {
@@ -200,6 +237,38 @@ h6 {
  }
  .ig {
  height: 100px;
+ }
+ .chart {
+   
+ }
+ #l-name {
+    display: flex;
+    height: 60px;
+    text-align: center;
+    border-radius: 16px;
+    flex-direction: column;
+    align-content: center;
+    
+   
+ }
+ 
+ #subject {
+    display: flex;
+    height: 90px;
+    text-align: center;
+    border-radius: 16px;
+    flex-direction: column;
+    
+    
+ }
+ 
+ #submit {
+    display: block;
+    height: 60px;
+    border-radius: 16px;
+    flex-direction: column;
+    
+    
  }
 
 @media only screen and (min-width: 768px) {
@@ -332,10 +401,7 @@ h6 {
                     width: 50%;
     }
 
-    h2 , h3 , h4 {
-           transform: rotate(270);
-        
-    }
+    
      
 
 
@@ -446,6 +512,11 @@ h6 {
  h5 {
      font-size: 55px;
  }
+
+ h2 , h3 , h4 {
+    transform: rotate(270deg);
+ 
+}
  
  .learn {
      color: rgb(104,8,81);
@@ -459,12 +530,11 @@ h6 {
     padding: 100px;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 30px;
+    margin-right: 20px;
 }
 .icons {
-   grid-template-areas: 
-   "fb " " " " "
-   " " "yt " " "
-   ;
+   
+   
 
 }
 .fb {
@@ -479,14 +549,16 @@ h6 {
 }
 .wa {
  height: 100px;
+ grid-column-start: 3;
+ grid-column-end: 3;
 }
 .in {
 height: 100px;
 }
 .ig {
-height: 100px;
-grid-row: 2 / 2;
+
 }
+
 #f-name {
     display: flex;
     height: 60px;
@@ -496,12 +568,15 @@ grid-row: 2 / 2;
     
    
  }
- 
+ img {
+     
+ }
  #l-name {
     display: flex;
     height: 60px;
     text-align: center;
     border-radius: 16px;
+    flex-direction: column;
     
    
  }
@@ -511,6 +586,7 @@ grid-row: 2 / 2;
     height: 90px;
     text-align: center;
     border-radius: 16px;
+    flex-direction: column;
     
  }
  
@@ -518,6 +594,7 @@ grid-row: 2 / 2;
     display: block;
     height: 60px;
     border-radius: 16px;
+    flex-direction: column;
     
  }
  .media {

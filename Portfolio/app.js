@@ -77,9 +77,16 @@ $flexDivs.on('click', (e) => {
       for(let i=0; i< projects.length; i++){
           const $div = $("<div>").html(`
             <p>${projects[i].title}</p>
-            <img src=${projects[i].image}>
+            <a href="${projects[i].url}" target="_blank">
+            <img src=${projects[i].image} style:"display:none;" class="projects"></a>
           `)
           $(".all-projects").append($div)
           
       }
   }
+  
+  const $button = $('nav button, nav a');
+  $button.on("click", function () {
+      $('nav ul').fadeToggle(300)
+      $('nav button').toggleClass('open')
+  })

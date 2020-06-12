@@ -5,8 +5,8 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 2| Refine Worksheet Load Out (HTML, CSS) | Incomplete
+|Day 1| Wireframes / Priority Matrix / Timeline | complete
+|Day 2| Refine Worksheet Load Out (HTML, CSS) | complete
 |Day 3| Continue Css & Bug Fixes | Incomplete
 |Day 4| Final Touches Record Video | Incomplete
 |Day 5| Present | Incomplete
@@ -38,23 +38,23 @@ My online portfolio that describes me as a web developer, some of my work and me
 | --- | :---: |  :---: | :---: | :---: |
 | Refine wireframes | H | 1.5hr | 0 | 1.5hr|
 | Admin setup | H | 1.5hr | -hr | 2hr|
-| Build out html | H | 4H | -hr | 1hr|
-| create nav bar | H | 1.5hr| -hr | -hr |
-| Apply styling to Css| H | 4hr | -hr | .5hr|
-| Create Flexbox for content section | H | 3hrs| -hr | -hr |
-| Make Responsive | H | 3hr | -hr | -hr|
-| Refine Design | M | 2hr | -hr | -hr |
+| Build out html | H | 4H | -hr | 5hr|
+| create nav bar | H | 1.5hr| -hr | 2.5hr |
+| Apply styling to Css| H | 4hr | -hr | 6hr|
+| Create Flexbox for content  | H | 3hrs| -hr | 4hr |
+| Make Responsive | H | 3hr | -hr | 5hr|
+| Refine Design | M | 2hr | -hr | 3.5hr |
 | Record Video | L | 2hr | -hr | -hr|
-| Total | H | 22.5hrs| -hrs | 4.5hrs |
+| Total | H | 22.5hrs| -hrs | hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Content Hover | H | 2hr | -hr | 2hr|
-| Social Media Icons | L | 1hr | -hr | -hr|
+| Social Media Icons | L | 1hr | -hr | 1hr|
 | Apply Additional Dance Material | L | 2hr | -hr | -hr|
-| Bootstrap | M | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
+| Bootstrap | M | 4hr | -hr | 0hr|
+| Make own icon | L | 4hr | -hr | 0hr|
 | Total | H | 13hrs| -hrs | 2hrs |
 
 ## Additional Libraries
@@ -64,6 +64,7 @@ My online portfolio that describes me as a web developer, some of my work and me
 
 
 ## Issues and Resolutions
+Had Issues with  getting content inside of divs to take up full height when expanded in divs. Discovered that my <H> tags were the culprit and manipulated the margin as well as the z index to resolve the solution.
 
 
 
