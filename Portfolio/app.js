@@ -1,12 +1,15 @@
 /*let  linkDiv= $(".link");
 let img = []       
-        
+
+// test function    
+
 function addImage (){
     let img = "itsworking"
     linkDiv.attr("style", "background-image:" + img);
 
 
 }
+// function to remove image when hover over
 
 function removeImage(){
     linkDiv.attr("style", "background-image: ;")
@@ -40,8 +43,10 @@ linkDiv.hover(addImage, removeImage)*/
 let $flexDivs = $('.content-container > div');
 
 $flexDivs.on('click', (e) => {
-    if ($(e.target).hasClass('expand')) {
-     $flexDivs.removeClass('expand')
+   
+    if ($(e.target).hasClass('expand') || $(e.target).parents().hasClass("expand")) {
+     console.log('hello')
+        $flexDivs.removeClass('expand')
      $flexDivs.removeClass('contract');
     } else {
      $flexDivs.removeClass('expand');
@@ -50,6 +55,7 @@ $flexDivs.on('click', (e) => {
     }
   
  });
+// google sheets
 
  let sheetUrl = "https://docs.google.com/spreadsheets/d/1YGGdf8J8okNNWqFM1_S6mfg3JzUrirOAhRaEIyqBGRc/edit?usp=sharing";
  let sheetAsJSON = "https://spreadsheets.google.com/feeds/list/1YGGdf8J8okNNWqFM1_S6mfg3JzUrirOAhRaEIyqBGRc/od6/public/values?alt=json";
@@ -85,6 +91,8 @@ $flexDivs.on('click', (e) => {
       }
   }
   
+  // nav bar functions
+
   const $button = $('nav button, nav a');
   $button.on("click", function () {
       $('nav ul').fadeToggle(300)
