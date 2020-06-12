@@ -158,7 +158,7 @@ div.expand .content {
 }
 
 .Pro .content {
-    display: none;
+    display: block;
 }
 .Pro.expand .content {
     display: block;
