@@ -1,6 +1,7 @@
+
 body {
-    width: 100%;
-    height: max-content;
+font-family: 'Montserrat', sans-serif;
+
 }
 .nav-link {
  color: blue;
@@ -16,44 +17,115 @@ body {
   
 
 }
+.content-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+  
+   
+    
+    }
+.content-container > div {
+   height: auto;
+    flex-grow: 1;
+    width: 100%;
+    transition: width 250ms ease;
+    overflow: hidden;
+   
+    
+}
+.content-container > .contract {
+    width: 10%;
+    flex-grow: 0;
+}
+.content-container > .expand {
+    flex-grow: 2;
+    width: 100%;
+}
+.content-container > div > .content {
+    opacity: 0;
+    width: 100%;
+    pointer-events: none;
+    transition: opacity 250ms ease;
+    height: auto;
+    background-size: cover;
+}
+.content-container > div:hover .content {
+    opacity: 1;
+}
+div.expand .content {
+    opacity: 1;
+}
+.Dev {
+    width: 100%;
+       
+    }
+.Pro {
+    width: 100%;
+    }
+.Per {
+      width: 100%;
+    }
+
+.Dev .content {
+   
+}
+h1 {
+    font-weight: 300;
+    width: auto;
+    text-align: center;
+}
+p  {
+    text-align: center;
+}
+
 h2 {
    color: dodgerblue;
-   /*transform: rotate(270deg);*/
+   width: auto;
    text-align: center;
+   margin-top: 200px;
+   font-family:  'Montserrat', sans-serif;
+   
 
 }
+
 h3 {
     color:  rgb(25, 235, 42);
-    /*transform: rotate(270deg);*/
+    width: auto;
     text-align: center;
+    margin-top: 200px;
+   
 
 }
 
 h4 {
-    color: indigo;
-   /* transform: rotate(270deg);*/
+   color: indigo;
+   width: auto;
    text-align: center;
+   margin-top: 200px;
+   
 
 }
-h2 , h3 , h4 {
-padding: 30px;
-}
 
-.content-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 250px;
-    justify-content: space-between;
-    align-items: left;
-    
-    }
+
+
 
     h5 {
         margin-top: 300px;
         font-size: 45px;
+        text-align: center;
+        font-weight: 900;
         
     }
+    h6 {
+        font-size: 35px;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 20px;
+
+            }
+
     .contact-wrapper {
         margin-top: 35px;
     }
@@ -62,3 +134,237 @@ padding: 30px;
         width: 50%;
     }
 
+    @media only screen and (min-width: 768px) {
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+           
+           
+           
+            
+            }
+        .content-container > div {
+                height: 100vh;
+                flex-grow: 1;
+                width: 33.33%;
+                transition: width 250ms ease;
+                overflow: hidden;
+               
+            }
+        .content-container > .contract {
+                width: 10%;
+                flex-grow: 0;
+            }
+        .content-container > .expand {
+                flex-grow: 2;
+                width: 100%;
+            }
+        .content-container > div > .content {
+                opacity: 0;
+                width: 100%;
+                pointer-events: none;
+                transition: opacity 250ms ease;
+                height: 100vh;
+                background-size: cover;
+            }
+        .content-container > div:hover .content {
+                opacity: 1;
+            }
+        div.expand .content {
+                opacity: 1;
+            }
+        .Dev {
+                
+                background-color: turquoise;
+                   
+                }
+        .Pro {
+                
+                background-color: yellowgreen;
+                }
+        .Per {
+                  
+                  background-color: violet;
+                }
+        .Dev  .content {
+            background-image: url(https://res.cloudinary.com/dz449ufvx/image/upload/c_scale,w_399/v1591762651/portfolio%20images/AnthonyHeadshot_sd0slm.jpg);
+            }
+        .Pro .content{
+            
+            }
+        .Per .content{
+            
+            }
+            
+        h1 {
+                font-weight: 300;
+                width: auto;
+                text-align: center;
+            }
+        p  {
+                text-align: center;
+            }
+            
+        h2 {
+               color: dodgerblue;
+               width: auto;
+               text-align: center;
+              
+               font-family:  'Montserrat', sans-serif;
+               font-weight: 600;
+               
+               
+            
+            }
+            
+        h3 {
+                color:  rgb(25, 235, 42);
+                width: auto;
+                text-align: center;
+                
+                font-weight: 600;
+            
+            }
+            
+        h4 {
+               color: indigo;
+               width: auto;
+               text-align: center;
+               
+               font-weight: 600;
+               
+            
+            }
+       
+            
+            
+            
+        h5 {
+                    margin-top: 300px;
+                    font-size: 45px;
+                    text-align: center;
+                    font-weight: 900;
+                    
+                    
+                }
+        h6 {
+            font-size: 35px;
+            font-weight: 500;
+
+                }
+        .contact-wrapper {
+                    margin-top: 35px;
+                }
+            
+        .bottom-img{
+                    width: 50%;
+                }
+
+       h2 , h3 , h4 {
+           transform: rotate(270);
+        
+     }
+     
+
+
+    }
+    @media only screen and (min-width: 1024px) {
+        .content-container {
+            display: flex;
+            position: relative;
+          }
+          
+          .content-container > div {
+            height: 100vh;
+            flex-grow: 1;
+            width: 33.33%;
+            transition: width  250ms ease;
+            overflow: hidden;
+            border-right: thin solid black;
+            position: relative;
+          }
+          
+          
+          .content-container > .contract {
+            width: 10%;
+            flex-grow: 0;
+          }
+          
+          .content-container >  .expand {
+            flex-grow: 2;
+            width: 100%;
+            
+          }
+          
+          
+          .Dev {
+            background-color: turquoise;
+          }
+          
+          .content-container > div > .content {
+            opacity: 0;
+            width: 100%;
+            pointer-events: none;
+            transition: opacity 250ms ease;
+            height: 100vh;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            
+          }
+          h2 {
+              z-index: 2;
+          }
+          .content-container > div:hover .content {
+            opacity: 1;
+            
+          }
+          .content-container > div h2{
+             
+          }
+          
+          div.expand .content  {
+            opacity: 1;
+          }
+          .content {
+             
+          }
+          
+          }
+          .Pro {
+            background-color: yellowgreen;
+            
+          }
+          
+          .Per {
+            background-color: violet;
+          }
+          .Dev .content {
+            
+            background-image: url(https://res.cloudinary.com/dz449ufvx/image/upload/c_scale,w_399/v1591762651/portfolio%20images/AnthonyHeadshot_sd0slm.jpg);
+          }
+          .Pro .content {
+            /*background-image: url(https://fox28spokane.com/wp-content/uploads/2020/04/AprilShoe-720x399.jpg);*/
+         
+        }
+        .all-projects {
+           
+        }
+
+          
+          .Per .content {
+            background-image: url(https://res.cloudinary.com/dz449ufvx/image/upload/v1591763358/portfolio%20images/TOur_wlgiit.jpg);
+          }
+          header {
+              float: right;
+              margin-right: 20px;
+              margin-bottom: 50px;
+         
+          }
+        }
+          
+          
+    }
