@@ -18,7 +18,7 @@ My online portfolio that describes me as a web developer, some of my work and me
 
 ## Google Sheet
 
- [Link]() 
+ [Link](https://docs.google.com/spreadsheets/d/1YGGdf8J8okNNWqFM1_S6mfg3JzUrirOAhRaEIyqBGRc/edit#gid=0) 
 
 ## Wireframes
 
@@ -41,21 +41,21 @@ My online portfolio that describes me as a web developer, some of my work and me
 | Build out html | H | 4H | -hr | 5hr|
 | create nav bar | H | 1.5hr| -hr | 2.5hr |
 | Apply styling to Css| H | 4hr | -hr | 6hr|
-| Create Flexbox for content  | H | 3hrs| -hr | 4hr |
+| Create Flexbox for content  | H | 3hrs| -hr | 6hr |
 | Make Responsive | H | 3hr | -hr | 5hr|
 | Refine Design | M | 2hr | -hr | 3.5hr |
 | Record Video | L | 2hr | -hr | -hr|
-| Total | H | 22.5hrs| -hrs | hrs |
+| Total | H | 22.5hrs| -hrs | 31.5hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Content Hover | H | 2hr | -hr | 2hr|
+| Content Hover | H | 2hr | -hr | 3hr|
 | Social Media Icons | L | 1hr | -hr | 1hr|
-| Apply Additional Dance Material | L | 2hr | -hr | -hr|
+| Apply Addl Dance Material | L | 2hr | -hr | 0 hr|
 | Bootstrap | M | 4hr | -hr | 0hr|
 | Make own icon | L | 4hr | -hr | 0hr|
-| Total | H | 13hrs| -hrs | 2hrs |
+| Total | H | 13hrs| -hrs | 4hrs |
 
 ## Additional Libraries
 
@@ -65,6 +65,8 @@ My online portfolio that describes me as a web developer, some of my work and me
 
 ## Issues and Resolutions
 Had Issues with  getting content inside of divs to take up full height when expanded in divs. Discovered that my <H> tags were the culprit and manipulated the margin as well as the z index to resolve the solution.
+
+Attempted to use bootstrap but ended up scrapping it and made differnt nav
 
 
 
